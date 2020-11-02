@@ -92,9 +92,44 @@ const menu = [
 ];
 
 const center = document.querySelector(".section-center");
+const btnCont = document.querySelector(".btn-container");
 
+//load Items
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
+
+  const categories = menu.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  const catBtns = categories
+    .map(function (category) {
+      return `<button class="filter-btn" type="button" data-cat=${category}>${category}</button>`;
+    })
+    .join("");
+  btnCont.innerHTML = catBtns;
+  const btns = document.querySelectorAll(".filter-btn");
+
+  btns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      const category = e.currentTarget.dataset.cat;
+      const menuCategory = menu.filter(function (menuItem) {
+        if (menuItem.category === category) {
+          return menuItem;
+        }
+      });
+      if (category === "all") {
+        displayMenuItems(menu);
+      } else {
+        displayMenuItems(menuCategory);
+      }
+    });
+  });
 });
 
 function displayMenuItems(menuItems) {
