@@ -84,7 +84,11 @@ const menu = [
 const center = document.querySelector(".section-center");
 
 window.addEventListener("DOMContentLoaded", function () {
-  let displayItem = menu.map(function (item) {
+  displayMenuItems(menu);
+});
+
+function displayMenuItems(menuItems) {
+  let displayItem = menuItems.map(function (item) {
     return `<article class="menu-item">
           <img
             class="photo"
@@ -104,4 +108,4 @@ window.addEventListener("DOMContentLoaded", function () {
   });
   displayItem = displayItem.join("");
   center.innerHTML = displayItem;
-});
+}
