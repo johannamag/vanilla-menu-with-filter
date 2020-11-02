@@ -2,6 +2,7 @@ const menu = [
   {
     id: 1,
     title: "Menu Item One",
+    category: "Lorem",
     price: 15,
     img: "./media/menu1pexels-na-urchin-2377173.jpg",
     desc:
@@ -10,6 +11,7 @@ const menu = [
   {
     id: 2,
     title: "Menu Item Two",
+    category: "Ipsum",
     price: 12,
     img: "./media/menu2pexels-susanne-jutzeler-1132558.jpg",
     desc:
@@ -18,6 +20,7 @@ const menu = [
   {
     id: 3,
     title: "Menu Item Three",
+    category: "Dolor",
     price: 27,
     img: "./media/menu3pexels-brigitte-tohm-239581.jpg",
     desc:
@@ -26,6 +29,7 @@ const menu = [
   {
     id: 4,
     title: "Menu Item Four",
+    category: "Lorem",
     price: 22,
     img: "./media/menu4pexels-suzy-hazelwood-1126359.jpg",
     desc:
@@ -34,6 +38,7 @@ const menu = [
   {
     id: 5,
     title: "Menu Item Five",
+    category: "Ipsum",
     price: 19,
     img: "./media/menu5pexels-ella-olsson-1640772.jpg",
     desc:
@@ -42,6 +47,7 @@ const menu = [
   {
     id: 6,
     title: "Menu Item Six",
+    category: "Dolor",
     price: 56,
     img: "./media/menu6pexels-eneida-nieves-905847.jpg",
     desc:
@@ -50,6 +56,7 @@ const menu = [
   {
     id: 7,
     title: "Menu Item Seven",
+    category: "Lorem",
     price: 83,
     img: "./media/menu7pexels-malidate-van-769289.jpg",
     desc:
@@ -58,6 +65,7 @@ const menu = [
   {
     id: 8,
     title: "Menu Item Eight",
+    category: "Ipsum",
     price: 17,
     img: "./media/menu8pexels-lisa-fotios-1279330.jpg",
     desc:
@@ -66,6 +74,7 @@ const menu = [
   {
     id: 9,
     title: "Menu Item Nine",
+    category: "Dolor",
     price: 19,
     img: "./media/menu9pexels-foodie-factor-566566.jpg",
     desc:
@@ -74,6 +83,7 @@ const menu = [
   {
     id: 10,
     title: "Menu Item Ten",
+    category: "Lorem",
     price: 32,
     img: "./media/menu10pexels-cheryl-wee-2262182.jpg",
     desc:
